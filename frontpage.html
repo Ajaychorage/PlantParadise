@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PlantParadise</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--font awesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href='/static/fontpage.css' />
+    </head>
+    <body>
+        <!--header section start-->
+        <header>
+            <a href="#" class="logo"><i class="fa fa-leaf"></i>PlantParadise.</a>
+            <nav class="navbar">
+                    <a  class="active" href="/">HOME</a>
+                    <a href="#categories">CATEGORIES</a>
+                    <a href="#product">Popular Plant</a>
+                    <a href="/contact">CONTACT US</a> 
+                    <a href="/about">ABOUT US</a>
+                    <a href="/Review">REVIEW</a>
+                    <a href="/dashboard">Admin</a>               
+            </nav>
+            <div class="icons">
+                <a href="/loginpage",methods=["GET","POST"] class="fas fa-user"></a>
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <i class="fas fa-search" id="search-icon"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <div class="shopping">
+                    <span class="quantity">0</span>
+                  </div> 
+                  </div>
+    </header>
+<!--header section end-->
+<!--search form-->
+<section>
+<form action="" id="search-form">
+    <input type="search" placeholder="Search here..." name="search" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+</section>
+<!-- home section start -->
+<section class="home" id="home">
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 /5</div>
+      <img src="static/images/slider5.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3/5</div>
+      <img src="static/images/Slider.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">4/5</div>
+      <img src="static/images/slider2.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="static/images/slider3.jpg" style="width:100%">
+      <div class="text">Caption four</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  </section>
+<!--home section end-->
+
+<!-- catagory section start -->
+<section>
+<h1 class="heading"> Categories </h1>
+<div class="list">        
+</div>
+</div>
+<div class="card">
+<h1>Card</h1>
+<ul class="listCard">
+</ul>
+<!-- <a href="/checked"><div class="btn">PURCHASE</div></a>
+</div> -->
+<div class="checkOut">
+  <!-- <div class="PURCHASE">PURCHASE</div> -->
+    <div class="total">0</div>
+   <a href="/checked"><div class="purchase">PURCHASE</div></a>
+    <div class="closeShopping">Close</div>
+</div>
+</div>
+</section>
+<!-- <section class="categories" id="categories">
+  <h1 class="heading"> Categories </h1>
+  <div class="box-container">
+  <img id="basketImage" onclick="clickCart()"src="https://mimo.app/r/cart.png"/>
+  <h2 id="itemCounter">0</h2>
+  <p id="orderTotal"></p>
+
+  <div class="pop">
+   <a href="/alovera"><img src="static/images/alovevera_cat.jpg" alt="alovevera_cat"></a>
+    <h3>Aloe vera Plant</h3>
+    <button class="button" onclick="addToCart(backpack)">Add to Cart</button>
+   </div>
+
+   <div class="pop">
+   <a href="/home"><img src="static/images/anthurium.jpg" alt="anthurium"></a>
+    <h3>anthurium Plant</h3>
+    <button class="button" onclick="addToCart(backpack)">Add to Cart</button>
+   </div>
+
+   <div class="pop">
+    <a href="/canna"><img src="static/images/canna.jpg" alt="canna"></a>
+     <h3>canna Plant</h3>
+     <button class="button" onclick="addToCart(backpack)">Add to Cart</button>
+    </div>
+
+   <div class="pop">
+   <a href="/home1"><img src="static/images/owls_mg.jpg" alt="owls_mg"></a>
+    <h3>Indoor Plant</h3>
+    <button class="button" onclick="addToCart(backpack)">Add to Cart</button>
+   </div>
+
+   <div class="pop">
+   <a href="/forbes"><img src="static/images/cactus1.jpg" alt="forbes vatted"></a>
+    <h3>cactus Plant</h3>
+    <button class="button" onclick="addToCart(backpack)">Add to Cart</button>
+   </div>
+
+  <div class="pop">
+  <a href="/lily"><img src="static/images/lily2.jpg" alt="lily2"></a>
+   <h3>lily Plant</h3>
+   <button class="button" onclick="addToCart(backpack)">Add to Cart</button>
+  </div>
+
+  <div class="pop">
+   <a href="/money"><img src="static/images/money.jpg" alt="money"></a>
+   <h3>Money plant</h3>
+   <button class="button" onclick="addToCart(camera)">Add to Cart</button>
+  </div>
+
+  <div class="pop">
+   <a href="/rose"><img src="static/images/rose2.jpg" alt="home"></a>
+    <h3>Rose plant</h3>
+    <button class="button" onclick="addToCart(camera)">Add to Cart</button>
+   </div>
+
+   <div class="pop">
+    <a href="/Indoorplant"><img src="static/images/Peperomia.jpg" alt="Peperomia"></a>
+    <h3>Peperomia plant </h3>
+    <button class="button" onclick="addToCart(camera)">Add to Cart</button>
+   </div>
+
+   <div class="pop">
+   <a href="/tulsi"><img src="static/images/tulasi1.jpg"alt="tulsu1"></a>
+    <h3>Tulsi Plant</h3>
+    <button class="button" onclick="addToCart(camera)">Add to Cart</button>
+   </div>
+
+   <div class="pop">
+   <a href="/hibiscous"><img src="static/images/hibi2.jpg"alt="hibi2"></a>
+    <h3>Hibiscus Plant</h3>
+    <button class="button" onclick="addToCart(camera)">Add to Cart</button>
+   </div>
+
+   <div class="pop">
+    <a href="/neem"><img src="static/images/neem.jpg"alt="hibi2"></a>
+    <h3>Neem Plant</h3>
+    <button class="button" onclick="addToCart(camera)">Add to Cart</button>
+   </div>
+    <div class="pop">
+    <a href="/bamboo"><img src="static/images/bamboo_gift.jpg"alt="bamboo_gift"></a>
+    <h3>bamboo Plant</h3>
+    <button class="button" onclick="addToCart(camera)">Add to Cart</button>
+   </div>
+
+   <div class="pop">
+   <a href="/deco"><img src="static/images/sedeveria.jpg"alt="sedeveria"></a>
+    <h3>sedeveria Plant</h3>
+    <button class="button" onclick="addToCart(camera)">Add to Cart</button>
+   </div>
+
+   <div class="pop">
+    <a href="/forever"><img src="static/images/forever_mg.jpg"alt="forever_mg"></a>
+     <h3> miniature Plant</h3>
+     <button class="button" onclick="addToCart(camera)">Add to Cart</button>
+    </div>
+
+     </div>
+    </div>                      
+</section> -->
+
+<!-- catagory section end -->
+<!-- Product section start -->
+ <section class="product" id="product">
+  <h1 class="sub-heading">Popular Plant</h1>
+  <div class="box-container">
+    <div class="box">
+  <img src="static/images/pupular1.jpg" alt="plant">
+     <a href="/floweringplants"class="btn">Shop now</a> 
+    </div>
+
+    <div class="box">
+    <img src="static/images/pop2.jpg" alt="plant">
+    <a href="/livinggift"class="btn">Shop now</a>
+     </div>
+
+     <div class="box">
+      <img src="static/images/pop3.jpg" alt="plant"> 
+      <a href="/microgreen" class="btn">Shop now</a> 
+     </div>
+     <div class="box">
+      <img src="static/images/pop7.jpg" alt="plant"> 
+      <a href="/bonsaiplant" class="btn">Shop now</a> 
+     </div>
+
+     <div class="box">
+      <img src="static/images/pop4.jpg" alt="plant"> 
+      <a href="/Organicplant" class="btn">Shop now</a> 
+     </div>
+
+     <div class="box">
+      <img src="static/images/pop6.jpg" alt="plant"> 
+      <a href="/miniatureplant" class="btn">Shop now</a> 
+     </div>
+
+ </div>
+ </section>   
+
+<!-- ======= Footer ======= -->
+<section class="footer" id="footer">
+  <div class="container">
+    <h1 class="heading">Plant Paradise</h1>
+    <div class="row">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">Caregories</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="/contact">contactus</a></li>
+          <li><a href="/about">about us</a></li>
+          <li><a href="/Review">Review</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h4>Get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">Payment option</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4> online shop</h4>
+        <ul>
+          <li><a href="/floweringplants">Flowering plants</a></li>
+          <li><a href="bonsaiplant">indoor plants</a></li>
+          <li><a href="miniatureplant">miniature plants</a></li>
+          <li><a href="Organicplant">organic seed plants</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4> Fllow us</h4>
+        <ul>
+        <div class="social-links">
+          <a href="#"><li class="fab fa-facebook-f"></li></a>
+          <a href="#"><li class="fab fa-twitter"></li></a>
+          <a href="#"><li class="fab fa-instagram"></li></a>
+          <a href="#"><li class="fab fa-linkedin-in"></li></a>
+          <a href="https://goo.gl/maps/e1m4gsiRbc57Z9tT9"><li class="fa fa-map-marker"></li></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</section>
+<!-- <!======= footer page end ===================> -->
+    
+
+            <!--custome js file-->
+            <script src="{{url_for('static', filename='front.js')}}"></script>
+           <!-- swiper script link -->
+    </body>
+</html>
+
