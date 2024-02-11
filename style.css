@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "josefin Sans" , sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: cyan;
+    font-family: Arial;
+    background: url(ps://images.unsplash.com/photo-1501436513145-30f24ehtt19fcc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlJTIwYnV0dGVyZmx5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+}
+.navbar{
+    display: show;
+}
+.navbar li{
+    float: right;
+    list-style: none;
+    margin: 10px 20px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar  li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color:white;
+}
+.navbar input{
+    border: solid rgb(0, 0, 0);
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 170px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+.login{
+    width: 382px;
+    height: 500px;
+    color: blue;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    box-sizing: border-box;
+    padding: 90px 50px;
+    background-color:rgba(54, 52, 52, 0.5);
+    border-radius: 15px;
+}
+.login input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.login input[type=Password]{
+    border: none;
+    border-bottom: 1px solid darkblue;
+    background: transparent;
+    outline:  none;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+}
+.login input[type=Text]{
+    border: none;
+    border-bottom: 1px solid darkblue;
+    background: transparent;
+    outline:  none;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+}
+ .login input[type =submit]{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    background:darkblue;
+    cursor: pointer;
+    border-radius: 20px;
+     margin: 12px 0 18px;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+ .login input[type =button]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: darkblue;
+    cursor: pointer;
+    border-radius: 20px;
+     margin: 12px 0 18px;
+     font-weight: bold;
+     text-transform: uppercase;
+
+ }
+ .login input[type= button]:hover{
+    background: darkblue;
+    color:white;
+
+ }
+.login h2{
+    margin: 0;
+    padding: 0 0 26px;
+    text-align:center;
+    color:blue;
+}
+.login #email_error,
+.login #pass_error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: #c62828;
+    background: rgba(255,0,0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #ef9a9a;
+    display: none;
+}
+.Register{
+    width: 400px;
+    height: 485px;
+    color:lightskyblue;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    box-sizing: border-box;
+    padding: 90px 50px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.Register input[type =submit]{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    background: darkblue;
+    cursor: pointer;
+    border-radius: 20px;
+     margin: 12px 0 18px;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+       -moz-appearance: checkbox;
+            appearance: checkbox;
+    display: inline-block;
+    width: auto;
+}
+.login input[type =button]{
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 40%;
+    color: #fff;
+    font-size: 14px;
+    background:skyblue;
+    cursor: pointer;
+    border-radius: none;
+     margin: 10px 0 16px;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+.Register h2{
+    text-align: center;
+    padding: 0 0 26px;
+}
+.Register input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.Register input[type=Text]{
+    border: none;
+    border-bottom: 1px solid darkblue;
+    background: transparent;
+    outline:  none;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+}
+.Register input[type=Password]{
+    border: none;
+    border-bottom:1px solid darkblue;
+    background: transparent;
+    outline:  none;
+    height: 30px;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+}
+.Register input[type=email]{
+    border: none;
+    border-bottom: 1px solid darkblue;
+    background: transparent;
+    outline:  none;
+    height: 30px;
+    width: 100%;
+    color:white;
+    font-size: 14px;
+}
+.Register input[type =button]{
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 40%;
+    color: #fff;
+    font-size: 14px;
+    background: skyblue;
+    cursor: pointer;
+    border-radius: 20px;
+     margin: 10px 0 16px;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+
+::placeholder {
+    color: lightslategray;
+}
+.login ::placeholder{
+    color: black;
+}
+.login a{
+    color: blue;
+}

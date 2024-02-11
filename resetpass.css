@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+}
+.form-container{
+   display: flex;
+   height: 98vh;
+   width: 100%;
+   justify-content:center;
+   align-items: center;
+}
+.form-container .form-wrep{
+    background-color: #fff;
+    width: 40%;
+    padding: 15px 20px;
+}
+.form-container .form-wrep h2{
+    text-align: center;
+}
+.form-container .form-wrep .form-box input[type ="text"]{
+padding: 5px 8px;
+border-radius: 3px;
+border: 1px solid #353535;
+width: 100%;
+}
+.form-container .form-wrep .form-submit{
+    display: center;
+    justify-content: center;
+}
+.form-container .form-wrep .form-submit input[type="submit"]{
+    padding: 8px 10px;
+    border: none;
+    background: #353535;
+    color: #fff;
+    font-weight: 800;
+    font-size: 19px;
+    text-align:center;
+}
+::placeholder{
+    color: black;
+}
+
